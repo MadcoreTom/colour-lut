@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+        .navbar-brand h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 40px;
+            line-height: 56px;
+            margin: 0 0.25em
+        }
+
+        input[type="color"] {
+            border: none;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            background-color: transparent;
+            cursor:pointer;
+        }
+
+        .my-columns {
+            display:flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+
+        .my-columns >*:not(:first-child){
+            border-left: 1px solid #363636;
+        }
+
+        .my-columns >* {
+            padding: 10px;
+        }
+
+        .main {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        canvas {
+            border: 1px dotted blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
